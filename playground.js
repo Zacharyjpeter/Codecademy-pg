@@ -19,3 +19,15 @@ var numOfSlices = 8;
 console.log(favoriteFood);
 console.log(numOfSlices);
 //outputs pizza and 8 to the console
+
+//Let is similar to var and can assign variables value
+let changeMe = true;
+changeMe = false;
+console.log(changeMe);
+//output = false
+
+//const can assign variables that are permanent
+const entree = 'Enchiladas';
+console.log(entree);
+entree = 'Tacos';
+//output = Enchiladas
