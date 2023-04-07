@@ -50,3 +50,22 @@ console.log("The value of levelUp:", levelUp);
 console.log("The value of powerLevel:", powerLevel);
 console.log("The value of multiplyMe:", multiplyMe);
 console.log("The value of quarterMe:", quarterMe);
+
+//Using ++ or -- can increase or decrease a number by one
+let gainedDollar = 3;
+let lostDollar = 50;
+
+gainedDollar++;
+lostDollar--;
+//output 4 and 49
+
+//concatentation is when you display two variables back to back
+let favoriteAnimal = 'eagle';
+console.log('My favorite animal: ' + favoriteAnimal);
+//output my favorite animal: eagle
+
+//A template literal allows you to concatenate without plus sign
+let myName = 'Zachary';
+let myCity = 'Norman';
+console.log(`My name is ${myName}. My favorite city is ${myCity}`);
+//output My name is Zachary. My favorite city is Norman
