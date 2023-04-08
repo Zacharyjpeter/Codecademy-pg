@@ -69,3 +69,23 @@ let myName = 'Zachary';
 let myCity = 'Norman';
 console.log(`My name is ${myName}. My favorite city is ${myCity}`);
 //output My name is Zachary. My favorite city is Norman
+
+//javascript can be referenced in line like this
+<script>
+    // Your JavaScript goes here!
+    console.log("Hello, World!")
+</script>
+//output Hello world
+
+//javascript can be referenced from a separate file like this
+//<script src="javascript.js"></script>
+
+//typeof will tell you the value of your variable
+let newVariable = "Playing around with typeof.";
+
+console.log(typeof newVariable);
+
+newVariable = 1;
+
+console.log(typeof newVariable);
+//output first is string, second is number
