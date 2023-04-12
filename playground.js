@@ -89,3 +89,11 @@ newVariable = 1;
 
 console.log(typeof newVariable);
 //output first is string, second is number
+
+//if statements create a trigger based on a boolean
+let sale = true;
+sale = false;
+if (sale) {
+  console.log('Time to buy!');
+}
+//no output since sale is false
