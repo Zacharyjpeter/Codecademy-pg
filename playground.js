@@ -97,3 +97,25 @@ if (sale) {
   console.log('Time to buy!');
 }
 //no output since sale is false
+
+//if else statements create a trigger based on a condition
+let product = true;
+
+product = false;
+
+if(product) {
+  console.log('Time to buy!');
+} else {
+  console.log('Time to wait for a sale.');
+}
+//output time to wait for a sale bc false
+
+/*comparison statements create a trigger based on value range
+Bryan uses this in his dragon game */
+let hungerLevel = 7;
+if (hungerLevel > 7) {
+  console.log('Time to eat!');
+} else {
+  console.log('We can eat later!');
+}
+//output We can eat later bc 7 is not greater than 7
