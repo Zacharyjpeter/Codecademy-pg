@@ -161,3 +161,20 @@ let writingUtensil = tool || 'pen';
 
 console.log(`The ${writingUtensil} is mightier than the sword.`);
 //output is marker bc tool has value. if tool was blank output would be pen
+
+//React notes. Html in js is called jsx. JSX is assigned to variables like js
+const myDiv = (
+  <div>
+    <h1>Hello world</h1>
+  </div>
+);
+
+//Ternary operators allow if else to be even simpler
+//Uses ? and : instead of if else and {}
+let isLocked = false;
+isLocked ? console.log('You will need a key to open the door.') : console.log('You will not need a key to open the door.');
+let isCorrect = true;
+isCorrect ? console.log('Correct!') : console.log('Incorrect!');
+let favoriteQuote = 'Love That!';
+favoriteQuote === 'Love That!' ? console.log('I love that!') : console.log("I don't love that!");
+//ouput You don't need a key. Correct. I love that.
