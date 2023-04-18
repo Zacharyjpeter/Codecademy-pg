@@ -213,3 +213,25 @@ switch (athleteFinalPosition) {
     break;
 }
 //output you get the gold medal
+
+//testing switch, ternary, and statements
+let jesus = false;
+let zachary = 'developer';
+
+jesus ? console.log("He's here") : console.log("Sum not right");
+
+switch (zachary) {
+  case 'developer': console.log("Zachary is a developer!");
+  break;
+  case 'moneycoach': console.log("Zachary is not a developer yet.");
+  break;
+  default: console.log("Where is Zachary?");
+  break;
+}
+
+if (zachary === 'developer' && jesus === true) {
+  console.log("Won't he do it!");
+} else {
+  console.log("Ain't nothing happened yet...");
+}
+//output sum not right, zachary is a developer, aint nothing happened yet
