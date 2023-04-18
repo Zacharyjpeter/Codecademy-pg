@@ -178,3 +178,38 @@ isCorrect ? console.log('Correct!') : console.log('Incorrect!');
 let favoriteQuote = 'Love That!';
 favoriteQuote === 'Love That!' ? console.log('I love that!') : console.log("I don't love that!");
 //ouput You don't need a key. Correct. I love that.
+
+//else if can be used to create a list of conditions to run thru
+let season = "summer";
+
+if (season === "spring") {
+  console.log("It's spring! The trees are budding!");
+} else if (season === "winter") {
+  console.log("It's winter! Everything is covered in snow.");
+} else if (season === "fall") {
+  console.log("It's fall! Leaves are falling!");
+} else if (season === "summer") {
+  console.log("It's sunny and warm because it's summer!");
+} else {
+  console.log("Invalid season.");
+}
+//output it's sunny and warm bc it's summer
+
+//Concept: Switch statement. Used to simplify and speed up conditional trigger.
+let athleteFinalPosition = 'first place';
+
+switch (athleteFinalPosition) {
+  case 'first place': 
+    console.log('You get the gold medal!');
+    break;
+  case 'second place':
+    console.log('You get the silver medal!');
+    break;
+  case 'third place':
+    console.log('You get the bronze medal!');
+    break;
+  default:
+    console.log('No medal awarded.');
+    break;
+}
+//output you get the gold medal
