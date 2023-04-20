@@ -235,3 +235,28 @@ if (zachary === 'developer' && jesus === true) {
   console.log("Ain't nothing happened yet...");
 }
 //output sum not right, zachary is a developer, aint nothing happened yet
+
+//basic function syntax. function functionname() {command}
+function getReminder() {
+  console.log("Water the plants.");
+}
+
+function greetInSpanish() {
+  console.log("Buenas tardes.");
+}
+
+//call a function by using name()
+function sayThanks() {
+  console.log("Thank you for your purchase! We appreciate your business.");
+}
+
+sayThanks();
+sayThanks();
+sayThanks();
+
+//supposed to output Cole's name but doesn't work yet
+function sayThanks(name) {
+  console.log(
+    "Thank you for your purchase " + name + "! We appreciate your business."
+  );
+}
