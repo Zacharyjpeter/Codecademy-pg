@@ -1,9 +1,9 @@
 // Uses a built in method .toUpperCase() to print 'Codecademy' in all uppercase letters
-console.log('Codecademy'.toUpperCase());
+console.log("Codecademy".toUpperCase());
 
 // Uses a built in string method to print the string without whitespace
-console.log('    Remove whitespace   '.trim());
-//outputs Remove whitespace 
+console.log("    Remove whitespace   ".trim());
+//outputs Remove whitespace
 
 //Uses built in objects and methods to do math calculations
 console.log(Math.floor(Math.random() * 100));
@@ -14,7 +14,7 @@ console.log(Number.isInteger(2017));
 //third one is a boolean check for integers; the answer is true
 
 //Uses var to create variables and assign them a value
-var favoriteFood = 'pizza';
+var favoriteFood = "pizza";
 var numOfSlices = 8;
 console.log(favoriteFood);
 console.log(numOfSlices);
@@ -27,9 +27,9 @@ console.log(changeMe);
 //output = false
 
 //const can assign variables that are permanent
-const entree = 'Enchiladas';
+const entree = "Enchiladas";
 console.log(entree);
-entree = 'Tacos';
+entree = "Tacos";
 //output = Enchiladas
 
 //Variable assignments listed here
@@ -60,21 +60,18 @@ lostDollar--;
 //output 4 and 49
 
 //concatentation is when you display two variables back to back
-let favoriteAnimal = 'eagle';
-console.log('My favorite animal: ' + favoriteAnimal);
+let favoriteAnimal = "eagle";
+console.log("My favorite animal: " + favoriteAnimal);
 //output my favorite animal: eagle
 
 //A template literal allows you to concatenate without plus sign
-let myName = 'Zachary';
-let myCity = 'Norman';
+let myName = "Zachary";
+let myCity = "Norman";
 console.log(`My name is ${myName}. My favorite city is ${myCity}`);
 //output My name is Zachary. My favorite city is Norman
 
 //javascript can be referenced in line like this
-<script>
-    // Your JavaScript goes here!
-    console.log("Hello, World!")
-</script>
+<script>// Your JavaScript goes here! console.log("Hello, World!")</script>;
 //output Hello world
 
 //javascript can be referenced from a separate file like this
@@ -94,7 +91,7 @@ console.log(typeof newVariable);
 let sale = true;
 sale = false;
 if (sale) {
-  console.log('Time to buy!');
+  console.log("Time to buy!");
 }
 //no output since sale is false
 
@@ -103,10 +100,10 @@ let product = true;
 
 product = false;
 
-if(product) {
-  console.log('Time to buy!');
+if (product) {
+  console.log("Time to buy!");
 } else {
-  console.log('Time to wait for a sale.');
+  console.log("Time to wait for a sale.");
 }
 //output time to wait for a sale bc false
 
@@ -114,20 +111,20 @@ if(product) {
 Bryan uses this in his dragon game */
 let hungerLevel = 7;
 if (hungerLevel > 7) {
-  console.log('Time to eat!');
+  console.log("Time to eat!");
 } else {
-  console.log('We can eat later!');
+  console.log("We can eat later!");
 }
 //output We can eat later bc 7 is not greater than 7
 
 //logical operators allow an output to be based on condition
-let mood = 'sleepy';
+let mood = "sleepy";
 let tirednessLevel = 6;
 
-if (mood === 'sleepy' && tirednessLevel > 8) {
-  console.log('time to sleep');
+if (mood === "sleepy" && tirednessLevel > 8) {
+  console.log("time to sleep");
 } else {
-  console.log('not bed time yet');
+  console.log("not bed time yet");
 }
 //output not bed time yet bc tiredness isn't high enough
 
@@ -139,25 +136,24 @@ let wordCount = 1;
 if (wordCount) {
   console.log("Great! You've started your work!");
 } else {
-  console.log('Better get to work!');
+  console.log("Better get to work!");
 }
 
-
-let favoritePhrase = '';
+let favoritePhrase = "";
 
 if (favoritePhrase) {
   console.log("This string doesn't seem to be empty.");
 } else {
-  console.log('This string is definitely empty.');
+  console.log("This string is definitely empty.");
 }
 //output better get to work
 //output this string is def empty
 
 //another example of truthy vs falsy
-let tool = 'marker';
+let tool = "marker";
 
 // Use short circuit evaluation to assign  writingUtensil variable below:
-let writingUtensil = tool || 'pen';
+let writingUtensil = tool || "pen";
 
 console.log(`The ${writingUtensil} is mightier than the sword.`);
 //output is marker bc tool has value. if tool was blank output would be pen
@@ -172,11 +168,15 @@ const myDiv = (
 //Ternary operators allow if else to be even simpler
 //Uses ? and : instead of if else and {}
 let isLocked = false;
-isLocked ? console.log('You will need a key to open the door.') : console.log('You will not need a key to open the door.');
+isLocked
+  ? console.log("You will need a key to open the door.")
+  : console.log("You will not need a key to open the door.");
 let isCorrect = true;
-isCorrect ? console.log('Correct!') : console.log('Incorrect!');
-let favoriteQuote = 'Love That!';
-favoriteQuote === 'Love That!' ? console.log('I love that!') : console.log("I don't love that!");
+isCorrect ? console.log("Correct!") : console.log("Incorrect!");
+let favoriteQuote = "Love That!";
+favoriteQuote === "Love That!"
+  ? console.log("I love that!")
+  : console.log("I don't love that!");
 //ouput You don't need a key. Correct. I love that.
 
 //else if can be used to create a list of conditions to run thru
@@ -196,40 +196,43 @@ if (season === "spring") {
 //output it's sunny and warm bc it's summer
 
 //Concept: Switch statement. Used to simplify and speed up conditional trigger.
-let athleteFinalPosition = 'first place';
+let athleteFinalPosition = "first place";
 
 switch (athleteFinalPosition) {
-  case 'first place': 
-    console.log('You get the gold medal!');
+  case "first place":
+    console.log("You get the gold medal!");
     break;
-  case 'second place':
-    console.log('You get the silver medal!');
+  case "second place":
+    console.log("You get the silver medal!");
     break;
-  case 'third place':
-    console.log('You get the bronze medal!');
+  case "third place":
+    console.log("You get the bronze medal!");
     break;
   default:
-    console.log('No medal awarded.');
+    console.log("No medal awarded.");
     break;
 }
 //output you get the gold medal
 
 //testing switch, ternary, and statements
 let jesus = false;
-let zachary = 'developer';
+let zachary = "developer";
 
 jesus ? console.log("He's here") : console.log("Sum not right");
 
 switch (zachary) {
-  case 'developer': console.log("Zachary is a developer!");
-  break;
-  case 'moneycoach': console.log("Zachary is not a developer yet.");
-  break;
-  default: console.log("Where is Zachary?");
-  break;
+  case "developer":
+    console.log("Zachary is a developer!");
+    break;
+  case "moneycoach":
+    console.log("Zachary is not a developer yet.");
+    break;
+  default:
+    console.log("Where is Zachary?");
+    break;
 }
 
-if (zachary === 'developer' && jesus === true) {
+if (zachary === "developer" && jesus === true) {
   console.log("Won't he do it!");
 } else {
   console.log("Ain't nothing happened yet...");
@@ -260,3 +263,32 @@ function sayThanks(name) {
     "Thank you for your purchase " + name + "! We appreciate your business."
   );
 }
+
+//fixed it! See previous for context
+//I was passing Cole in the function not the call
+function sayThanks(name) {
+  console.log(
+    "Thank you for your purchase " + name + "! We appreciate your business."
+  );
+}
+
+sayThanks("Cole");
+
+//Default arguments can be used as placeholder if user doesn't provide input
+function makeShoppingList(item1 = "milk", item2 = "bread", item3 = "eggs") {
+  console.log(`Remember to buy ${item1}`);
+  console.log(`Remember to buy ${item2}`);
+  console.log(`Remember to buy ${item3}`);
+}
+
+makeShoppingList();
+//output is Remember to buy milk, bread, eggs
+
+//Return is literal and tells your function to "pass back" the result
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+
+const numOfMonitors = monitorCount(5, 4);
+console.log(numOfMonitors);
+//output is 20
