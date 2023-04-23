@@ -292,3 +292,17 @@ function monitorCount(rows, columns) {
 const numOfMonitors = monitorCount(5, 4);
 console.log(numOfMonitors);
 //output is 20
+
+//return allows you to use the result in other parts of your code
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+
+function costOfMonitors(rows, columns) {
+  return monitorCount(rows, columns) * 200;
+}
+
+const totalCost = costOfMonitors(5, 4);
+
+console.log(totalCost);
+//output 4000
