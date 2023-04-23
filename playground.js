@@ -305,4 +305,12 @@ function costOfMonitors(rows, columns) {
 const totalCost = costOfMonitors(5, 4);
 
 console.log(totalCost);
-//output 4000
+//output 
+
+//function expressions seem to be functions inside functions
+const plantNeedsWater = function (day) {
+  if (day === 'Wednesday')
+  return true;
+} else {
+  return false;
+}
