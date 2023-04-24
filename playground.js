@@ -305,12 +305,33 @@ function costOfMonitors(rows, columns) {
 const totalCost = costOfMonitors(5, 4);
 
 console.log(totalCost);
-//output 
+//output
 
-//function expressions seem to be functions inside functions
-const plantNeedsWater = function (day) {
-  if (day === 'Wednesday')
-  return true;
-} else {
-  return false;
-}
+//function expressions. A function stored inside a variable
+//this is similar to the project card component
+var plantNeedsWater = function (day) {
+  if (day === "Wednesday") {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+let waterCheck = plantNeedsWater("Tuesday");
+console.log(waterCheck);
+//output: falsy
+
+//fat arrow notation. shorter way to write functions
+var plantNeedsWater = (day) => {
+  if (day === "Wednesday") {
+    return true;
+  } else {
+    return false;
+  }
+};
+//output. same as previous. simply removes word "function"
+
+//concise arrow function. makes code shorter. same as previous
+//removes paranthesis, curly brace, and return bc it's implied when there's only one parameter
+const plantNeedsWater = day => day === "Wednesday" ? true : false;
+//output: none because the function hasn't been called
