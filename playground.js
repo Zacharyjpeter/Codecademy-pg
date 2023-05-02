@@ -338,10 +338,10 @@ const plantNeedsWater = day => day === "Wednesday" ? true : false;
 //output: none because the function hasn't been called
 
 //NEXT MODULE TOPIC: SCOPE
-//Scope refers to where a variable or function is placed, and when you can call it
+//Scope refers to where a variable is placed and when you can call it
 
-//city has a file scope and can be called anywhere within the project
-//skyscraper has a function scope and can only be called within the function block
+//Ex. city has a file scope and can be called anywhere within the project
+//Ex. skyscraper has a function scope and can only be called within the function block
 const city = "New York City";
 function logCitySkyline() {
   let skyscraper = "Empire State Building";
@@ -350,7 +350,7 @@ function logCitySkyline() {
 
 console.log(logCitySkyline());
 
-//Global scope means the code block can be used anywhere in the file
+//Global scope means the variable can be used anywhere in the file
 const satellite = "The Moon";
 const galaxy = "The Milky Way";
 const stars = "North Star";
@@ -360,3 +360,17 @@ function callMyNightSky() {
 }
 
 console.log(callMyNightSky());
+
+//Block scope means the variable can only be used within the code block or {}
+//Variables inside a block scope are called "local variables"
+
+//If console.log is inside the function it will print the variable
+//If console is outside the function and calls a variable inside it, you'll get an error
+//Key Point: Variables inside a function cannot be called by outside methods
+function logVisibleLightWaves() {
+  const lightWaves = "Moonlight";
+  console.log(lightWaves);
+}
+
+logVisibleLightWaves();
+console.log(lightWaves);
