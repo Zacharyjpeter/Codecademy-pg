@@ -373,4 +373,4 @@ function logVisibleLightWaves() {
 }
 
 logVisibleLightWaves();
-console.log(lightWaves);
+console.log(lightWaves); //throws a reference error
