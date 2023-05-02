@@ -239,6 +239,7 @@ if (zachary === "developer" && jesus === true) {
 }
 //output sum not right, zachary is a developer, aint nothing happened yet
 
+//NEW MODULE TOPIC: FUNCTIONS
 //basic function syntax. function functionname() {command}
 function getReminder() {
   console.log("Water the plants.");
@@ -335,3 +336,16 @@ var plantNeedsWater = (day) => {
 //removes paranthesis, curly brace, and return bc it's implied when there's only one parameter
 const plantNeedsWater = day => day === "Wednesday" ? true : false;
 //output: none because the function hasn't been called
+
+//NEXT MODULE TOPIC: SCOPE
+//Scope refers to where a variable or function is placed, and when you can call it
+
+//city has a file scope and can be called anywhere within the project
+//skyscraper has a function scope and can only be called within the function block
+const city = "New York City";
+function logCitySkyline() {
+  let skyscraper = "Empire State Building";
+  return "The stars over the " + skyscraper + " in " + city;
+}
+
+console.log(logCitySkyline());
