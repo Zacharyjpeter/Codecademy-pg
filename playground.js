@@ -374,3 +374,33 @@ function logVisibleLightWaves() {
 
 logVisibleLightWaves();
 console.log(lightWaves); //throws a reference error
+
+//Scope pollution. When you have too many global variables. Local variables are preferred.
+//Example. Stars should output North Star. But the local variable Sirius overwrites it
+const deathstar = "The Moon";
+const universe = "The Milky Way";
+let meteors = "North Star";
+
+const callMyNightSky = () => {
+  meteors = "Sirius";
+  return "Night Sky: " + satellite + ", " + meteors + ", " + galaxy;
+};
+
+console.log(callMyNightSky());
+console.log(meteors);
+
+//Modular code assigns variables inside the code block. This keeps your scope tight. Best practice!
+//If a variable doesn't need to exist outside the code block, it shouldn't.
+//Another example of scope and how it impacts output
+const logVisibleLightWaves = () => {
+  let lightWaves = "Moonlight";
+  let region = "The Arctic";
+  if (region === "The Arctic") {
+    let lightWaves = "Northern Lights";
+    console.log(lightWaves);
+  }
+  console.log(lightWaves);
+};
+
+logVisibleLightWaves();
+//output: Northern Lights then Moonlight
