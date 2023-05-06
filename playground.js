@@ -419,4 +419,11 @@ const famousSayings = [
 
 const listItem = famousSayings[0];
 console.log(listItem);
+console.log(famousSayings[3]);
 //output: 'fortune favors the brave'
+//output: undefined
+
+//Array items can be selected and changed
+let groceryList = ["bread", "tomatoes", "milk"];
+groceryList[1] = "avocados";
+//output: bread, avocados, milk
