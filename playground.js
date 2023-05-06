@@ -404,3 +404,19 @@ const logVisibleLightWaves = () => {
 
 logVisibleLightWaves();
 //output: Northern Lights then Moonlight
+
+//NEW CONCEPT: ARRAY. the javascript version of a list.
+const hobbies = ["words", "on", "page"];
+console.log(hobbies);
+//output: [ 'words', 'on', 'page' ]
+
+//Array items are indexed starting at 0. This can be used to reference the info like a library book
+const famousSayings = [
+  "Fortune favors the brave.",
+  "A joke is a very serious thing.",
+  "Where there is love there is life.",
+];
+
+const listItem = famousSayings[0];
+console.log(listItem);
+//output: 'fortune favors the brave'
