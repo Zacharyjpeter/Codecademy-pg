@@ -441,3 +441,30 @@ console.log(condiments);
 
 utensils[3] = "Spoon";
 console.log(utensils);
+
+//length property (no parenthesis) can tell you the number of contents in a variable
+const objectives = ["Learn a new language", "Read 52 books", "Run a marathon"];
+
+console.log(objectives.length);
+//output: 3
+
+//push method (YES parenthesis) can add items to an array after the fact
+const chores = ["wash dishes", "do laundry", "take out trash"];
+
+chores.push("clean bedroom", "get groceries");
+
+console.log(chores);
+//output adds
+
+//pop method removes the last item of an array
+const tasks = [
+  "wash dishes",
+  "do laundry",
+  "take out trash",
+  "cook dinner",
+  "mop floor",
+];
+
+tasks.pop();
+console.log(tasks);
+//output removes mop floor
