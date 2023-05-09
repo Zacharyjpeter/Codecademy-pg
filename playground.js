@@ -468,3 +468,34 @@ const tasks = [
 tasks.pop();
 console.log(tasks);
 //output removes mop floor
+
+//other array methods that can change list contents
+//const groceryList = [
+"orange juice",
+  "bananas",
+  "coffee beans",
+  "brown rice",
+  "pasta",
+  "coconut oil",
+  "plantains" ];
+
+//Shift removes the first item of the list
+const removed = groceryList.shift();
+console.log(`Removed item: ${removed}
+`);
+console.log(`Items remaining: ${groceryList}
+`);
+
+//Unshift adds item to beginning of list
+groceryList.unshift("popcorn");
+console.log(`Updated items: ${groceryList}
+`);
+
+//Slice returns range of values specified
+/*second number must be one further than what you want*/
+console.log(groceryList.slice(1, 4));
+console.log(groceryList);
+
+//IndexOf returns the item number in the array
+const pastaIndex = groceryList.indexOf("pasta");
+console.log(pastaIndex);
