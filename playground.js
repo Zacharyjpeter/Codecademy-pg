@@ -518,3 +518,14 @@ function removeElement(newArr) {
 /*applies the removeElement function to the array stored inside the variable named concept*/
 removeElement(concept);
 console.log(concept);
+
+//nested arrays are literal. An array is inside of an array. You can select them and assign them to a variable
+const numberClusters = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+];
+
+const target = numberClusters[2][1];
+console.log(target);
+//output: 6
