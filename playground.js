@@ -477,7 +477,7 @@ console.log(tasks);
   "brown rice",
   "pasta",
   "coconut oil",
-  "plantains" ];
+  "plantains" ;
 
 //Shift removes the first item of the list
 const removed = groceryList.shift();
@@ -499,3 +499,22 @@ console.log(groceryList);
 //IndexOf returns the item number in the array
 const pastaIndex = groceryList.indexOf("pasta");
 console.log(pastaIndex);
+
+//arrays can be changed with functions
+const concept = ["arrays", "can", "be", "mutated"];
+
+function changeArr(arr) {
+  arr[3] = "MUTATED";
+}
+
+/*applies the changeArr function to the array stored inside the variable named concept*/
+changeArr(concept);
+console.log(concept);
+
+function removeElement(newArr) {
+  newArr.pop();
+}
+
+/*applies the removeElement function to the array stored inside the variable named concept*/
+removeElement(concept);
+console.log(concept);
