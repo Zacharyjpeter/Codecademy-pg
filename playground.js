@@ -529,3 +529,13 @@ const numberClusters = [
 const target = numberClusters[2][1];
 console.log(target);
 //output: 6
+
+//NEW CONCEPT: Loops
+//For loop has three parts. Initiator. Stop condition. Iteration statement. 
+//let counter = 5 is the initiatior
+//counter < 11 is the stop condition
+//counter++ is the iteration statement
+for (let counter = 5; counter < 11; counter++) {
+  console.log(counter);
+}
+//output 5 6 7 8 9 10
