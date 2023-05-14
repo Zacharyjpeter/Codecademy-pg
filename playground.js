@@ -546,3 +546,17 @@ for (let counter = 3; counter >= 0; counter--) {
   console.log(counter);
 }
 //output 3 2 1 0
+
+//Looping through arrays. tricky one!
+/* The .length property numbers the items in the array. 
+i is increased until it matches that number.
+the console logs a string plus the array item based on i */
+
+const vacationSpots = ["Bali", "Paris", "Tulum"];
+
+for (let i = 0; i < vacationSpots.length; i++) {
+  console.log("I would love to visit " + vacationSpots[i]);
+}
+/*output: I would love to visit Bali
+I would love to visit Paris
+I would love to visit Tulum */
