@@ -560,3 +560,7 @@ for (let i = 0; i < vacationSpots.length; i++) {
 /*output: I would love to visit Bali
 I would love to visit Paris
 I would love to visit Tulum */
+
+//nested loops can be used to compare two different arrays
+const bobsFollowers = ['Reese', 'Jacob', 'Josh', 'Nicholas'];
+const tinasFollowers = ['Reese', 'Jacob', 'Sierra'];
