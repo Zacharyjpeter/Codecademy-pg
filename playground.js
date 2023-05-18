@@ -600,3 +600,19 @@ do {
   console.log(cupsAdded);
 } while (cupsAdded < cupsOfSugarNeeded);
 //output 1234567
+
+//Break keyword is used to stop your loop after a certain condition
+//Explanation: a for loop that logs the rapper array
+//If it hits Notorious big it stops and displays a string instead
+//"i" represents the array index (placeholder). Without "i" and the .length property, the loop won't start or log
+const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+
+for (let i = 0; i < rapperArray.length; i++) {
+  console.log(rapperArray[i]);
+  if (rapperArray[i] === "Notorious B.I.G.") {
+    break;
+  }
+}
+
+console.log("And if you don't know, now you know.");
+//output: Lil Kim, Jay Z, And if you don't know, now you know
