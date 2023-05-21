@@ -616,3 +616,18 @@ for (let i = 0; i < rapperArray.length; i++) {
 
 console.log("And if you don't know, now you know.");
 //output: Lil Kim, Jay Z, And if you don't know, now you know
+
+//NEW CONCEPT: Iterators and Higher Order Functions
+//Functions can be reassigned shorter names. Essentially a nickname
+const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
+  for (let i = 1; i <= 1000000; i++) {
+    if (2 + 2 != 4) {
+      console.log("Something has gone very wrong :( ");
+    }
+  }
+};
+
+const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
+
+console.log(isTwoPlusTwo.name);
+//output checkThatTwoPlusTwoEqualsFourAMillionTimes
