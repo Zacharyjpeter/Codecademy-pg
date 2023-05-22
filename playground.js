@@ -617,8 +617,10 @@ for (let i = 0; i < rapperArray.length; i++) {
 console.log("And if you don't know, now you know.");
 //output: Lil Kim, Jay Z, And if you don't know, now you know
 
-//NEW CONCEPT: Iterators and Higher Order Functions
+//NEW CONCEPT: Higher Order Functions
 //Functions can be reassigned shorter names. Essentially a nickname
+//Higher order functions can be passed or return function
+//Callback function is the one that's being passed in
 const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
   for (let i = 1; i <= 1000000; i++) {
     if (2 + 2 != 4) {
@@ -631,3 +633,22 @@ const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
 
 console.log(isTwoPlusTwo.name);
 //output checkThatTwoPlusTwoEqualsFourAMillionTimes
+
+//addTwo is the callback function being passed in the func parameter
+//output is 4
+const addTwo = (num) => {
+  return num + 2;
+};
+
+const checkConsistentOutput = (func, val) => {
+  let checkA = val + 2;
+  let checkB = func(val);
+
+  if (checkA === checkB) {
+    return func(val);
+  } else {
+    return "inconsistent results";
+  }
+};
+
+console.log(checkConsistentOutput(addTwo, 2));
