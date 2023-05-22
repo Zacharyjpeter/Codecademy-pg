@@ -641,6 +641,8 @@ const addTwo = (num) => {
 };
 
 const checkConsistentOutput = (func, val) => {
+  //checkA is the same equation as addTwo with different variable names
+  //This is why it returns "inconsistent results" if checkB doesn't match
   let checkA = val + 2;
   let checkB = func(val);
 
@@ -651,4 +653,7 @@ const checkConsistentOutput = (func, val) => {
   }
 };
 
+//logs to the console the check function. Passes it add two function.
+//The value "2" is used for checkA AND num in the addTwo function
+//This is bc func(val) is passed 2 from the parameter below, which passes it to num in addTwo
 console.log(checkConsistentOutput(addTwo, 2));
