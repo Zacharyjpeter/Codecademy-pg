@@ -657,3 +657,11 @@ const checkConsistentOutput = (func, val) => {
 //The value "2" is used for checkA AND num in the addTwo function
 //This is bc func(val) is passed 2 from the parameter below, which passes it to num in addTwo
 console.log(checkConsistentOutput(addTwo, 2));
+
+//New Concept: Iterators. These allow you to manipulate elements in an array
+//forEach is a loop that applies to each item in the array
+const fruits = ["mango", "papaya", "pineapple", "apple"];
+
+//The "(fruitType)" is a made up parameter. Somehow it knows I'm referencing the array items
+fruits.forEach((fruitType) => console.log(`I want to eat a ${fruitType}`));
+//output: I want to each mango. I want to eat papaya. etc.
