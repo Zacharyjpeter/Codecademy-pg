@@ -665,3 +665,38 @@ const fruits = ["mango", "papaya", "pineapple", "apple"];
 //The "(fruitType)" is a made up parameter. Somehow it knows I'm referencing the array items
 fruits.forEach((fruitType) => console.log(`I want to eat a ${fruitType}`));
 //output: I want to each mango. I want to eat papaya. etc.
+
+//forMap is a loop that can manipulate an array into a new form
+const animals = [
+  "Hen",
+  "elephant",
+  "llama",
+  "leopard",
+  "ostrich",
+  "Whale",
+  "octopus",
+  "rabbit",
+  "lion",
+  "dog",
+];
+
+//creates a variable secret message
+//runs the map iterator on the array
+//for each animal returns the 0 index char and stores it
+const secretMessage = animals.map((animal) => {
+  return animal[0];
+});
+
+console.log(secretMessage.join(""));
+//output HelloWorld
+
+const bigNumbers = [100, 200, 300, 400, 500];
+
+//divides each individual number by 100
+//saves the return value to smallNumbers
+const smallNumbers = bigNumbers.map((number) => {
+  return number / 100;
+});
+
+console.log(smallNumbers);
+//output 1,2,3,4,5
