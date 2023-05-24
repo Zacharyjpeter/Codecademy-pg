@@ -334,7 +334,7 @@ var plantNeedsWater = (day) => {
 
 //concise arrow function. makes code shorter. same as previous
 //removes paranthesis, curly brace, and return bc it's implied when there's only one parameter
-const plantNeedsWater = day => day === "Wednesday" ? true : false;
+const plantNeedsWater = (day) => (day === "Wednesday" ? true : false);
 //output: none because the function hasn't been called
 
 //NEXT MODULE TOPIC: SCOPE
@@ -477,7 +477,7 @@ console.log(tasks);
   "brown rice",
   "pasta",
   "coconut oil",
-  "plantains" ;
+  "plantains";
 
 //Shift removes the first item of the list
 const removed = groceryList.shift();
@@ -531,7 +531,7 @@ console.log(target);
 //output: 6
 
 //NEW CONCEPT: Loops
-//For loop has three parts. Initiator. Stop condition. Iteration statement. 
+//For loop has three parts. Initiator. Stop condition. Iteration statement.
 //let counter = 5 is the initiatior
 //counter < 11 is the stop condition
 //counter++ is the iteration statement
@@ -727,7 +727,7 @@ console.log(longFavoriteWords);
 
 //.findIndex iterator returns the array item that matches the criteria
 //Probably could be used in a search feature
-const animals = [
+const beings = [
   "hippo",
   "tiger",
   "lion",
@@ -738,11 +738,11 @@ const animals = [
   "elephant",
 ];
 
-const foundAnimal = animals.findIndex((animal) => {
+const foundAnimal = beings.findIndex((animal) => {
   return animal === "elephant";
 });
 
-const startsWithS = animals.findIndex((animal) => {
+const startsWithS = beings.findIndex((animal) => {
   //this works bc animal[0] checks the first chars of EACH WORD for letter S
   //if the array name animals[0] is used it would return the first array item
   return animal[0] === "s";
@@ -751,3 +751,26 @@ const startsWithS = animals.findIndex((animal) => {
 console.log(foundAnimal);
 console.log(startsWithS);
 //output 7 and 3. Remember index starts at 0. So +1 to find the correct word
+
+//.reduce method iterates through the array to return a single value. best done with math?
+const newNumbers = [1, 3, 5, 7];
+
+//this is essentially a calculator. Accumulator is the result. Current value is the next number in the array.
+const newSum = newNumbers.reduce((accumulator, currentValue) => {
+  console.log("The value of accumulator:", accumulator);
+  console.log("The value of currentValue: ", currentValue);
+
+  //the ,10 is a "second argument". this number gets added after the return statement
+  return accumulator + currentValue;
+}, 10);
+
+console.log(newSum);
+/*output: The value of accumulator: 10
+The value of currentValue:  1
+The value of accumulator: 11
+The value of currentValue:  3
+The value of accumulator: 14
+The value of currentValue:  5
+The value of accumulator: 19
+The value of currentValue:  7
+26 */
