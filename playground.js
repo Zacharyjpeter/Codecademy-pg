@@ -659,14 +659,14 @@ const checkConsistentOutput = (func, val) => {
 console.log(checkConsistentOutput(addTwo, 2));
 
 //New Concept: Iterators. These allow you to manipulate elements in an array
-//forEach is a loop that applies to each item in the array
+//forEach is an iterator that applies to each item in the array
 const fruits = ["mango", "papaya", "pineapple", "apple"];
 
 //The "(fruitType)" is a made up parameter. Somehow it knows I'm referencing the array items
 fruits.forEach((fruitType) => console.log(`I want to eat a ${fruitType}`));
 //output: I want to each mango. I want to eat papaya. etc.
 
-//forMap is a loop that can manipulate an array into a new form
+//forMap is an iterator that manipulates an array into a new form
 const animals = [
   "Hen",
   "elephant",
@@ -700,3 +700,27 @@ const smallNumbers = bigNumbers.map((number) => {
 
 console.log(smallNumbers);
 //output 1,2,3,4,5
+
+//.filter iterator returns the original array based on set criteria
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+const smallNumbers = randomNumbers.filter((numbers) => {
+  return numbers < 250;
+});
+
+const favoriteWords = [
+  "nostalgia",
+  "hyperbole",
+  "fervent",
+  "esoteric",
+  "serene",
+];
+
+const longFavoriteWords = favoriteWords.filter((words) => {
+  return words.length > 7;
+});
+
+console.log(smallNumbers);
+console.log(longFavoriteWords);
+//output: [ 200, 3.14, 7, 13 ]
+//[ 'nostalgia', 'hyperbole', 'esoteric' ]
