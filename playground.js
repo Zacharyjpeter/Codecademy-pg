@@ -704,7 +704,7 @@ console.log(smallNumbers);
 //.filter iterator returns the original array based on set criteria
 const randomNumbers = [375, 200, 3.14, 7, 13, 852];
 
-const smallNumbers = randomNumbers.filter((numbers) => {
+const miniNumbers = randomNumbers.filter((numbers) => {
   return numbers < 250;
 });
 
@@ -724,3 +724,30 @@ console.log(smallNumbers);
 console.log(longFavoriteWords);
 //output: [ 200, 3.14, 7, 13 ]
 //[ 'nostalgia', 'hyperbole', 'esoteric' ]
+
+//.findIndex iterator returns the array item that matches the criteria
+//Probably could be used in a search feature
+const animals = [
+  "hippo",
+  "tiger",
+  "lion",
+  "seal",
+  "cheetah",
+  "monkey",
+  "salamander",
+  "elephant",
+];
+
+const foundAnimal = animals.findIndex((animal) => {
+  return animal === "elephant";
+});
+
+const startsWithS = animals.findIndex((animal) => {
+  //this works bc animal[0] checks the first chars of EACH WORD for letter S
+  //if the array name animals[0] is used it would return the first array item
+  return animal[0] === "s";
+});
+
+console.log(foundAnimal);
+console.log(startsWithS);
+//output 7 and 3. Remember index starts at 0. So +1 to find the correct word
