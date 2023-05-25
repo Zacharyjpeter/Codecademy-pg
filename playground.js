@@ -778,8 +778,6 @@ The value of currentValue:  7
 //.some iterator can be used to check if some of the array items meet the criteria
 const words = ["unique", "uncanny", "pique", "oxymoron", "guise"];
 
-// Something is missing in the method call below
-
 console.log(
   words.some((word) => {
     return word.length < 6;
