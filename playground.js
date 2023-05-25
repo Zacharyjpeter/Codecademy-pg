@@ -784,3 +784,26 @@ console.log(
   })
 );
 //output: true bc there are some words with less than six characters
+
+//another example of .some and .filter in action
+//.some logs true to the console if there are words longer than 6 chars
+const text = ["unique", "uncanny", "pique", "oxymoron", "guise"];
+
+console.log(
+  text.some((word) => {
+    return word.length < 6;
+  })
+);
+
+// Uses filter to create a new array and saves it to interestingWords
+const interestingWords = text.filter((word) => {
+  return word.length > 5;
+});
+
+//uses .every to test if all words in the array meet the criteria
+console.log(
+  interestingWords.every((word) => {
+    return word.length > 5;
+  })
+);
+//output: true true
