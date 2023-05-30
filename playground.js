@@ -807,3 +807,35 @@ console.log(
   })
 );
 //output: true true
+
+//NEW CONCEPT: Object literal. It is what it says
+let fasterShip = {
+  'Fuel Type': 'Turbo Fuel',
+  color: 'silver'
+}
+
+//object properties can be manipulated with dot notation
+let spaceship = {
+  homePlanet: "Earth",
+  color: "silver",
+  "Fuel Type": "Turbo Fuel",
+  numCrew: 5,
+  flightPath: ["Venus", "Mars", "Saturn"],
+};
+
+let crewCount = spaceship.numCrew;
+let planetArray = spaceship.flightPath;
+
+//bracket notation is REQUIRED when accessing a value of numbers, spaces, or special characters
+spaceship = {
+  "Fuel Type": "Turbo Fuel",
+  "Active Mission": true,
+  homePlanet: "Earth",
+  numCrew: 5,
+};
+
+let propName = "Active Mission";
+
+let isActive = spaceship["Active Mission"];
+console.log(isActive);
+//output true
