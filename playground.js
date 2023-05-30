@@ -839,3 +839,25 @@ let propName = "Active Mission";
 let isActive = spaceship["Active Mission"];
 console.log(isActive);
 //output true
+
+//object literal properties can be assigned new values pretty easy
+spaceship.color = "glorious gold";
+spaceship.numEngines = 8;
+delete spaceship["Secret Mission"];
+
+//Methods are functions that are stored inside an object literal
+//They are distinguished by parenthesis
+let retreatMessage =
+  "We no longer wish to conquer your planet. It is full of dogs, which we do not care for.";
+
+const alienShip = {
+  retreat() {
+    console.log(retreatMessage);
+  },
+  takeOff() {
+    console.log("Spim... Borp... Glix... Blastoff!");
+  },
+};
+
+alienShip.retreat();
+alienShip.takeOff();
