@@ -907,3 +907,16 @@ spaceship.passengers = [
 ];
 
 let firstPassenger = spaceship.passengers[0];
+
+//PASSING BY REFERENCE. THE CONCEPT BLOCKING ME ON THE REACT COMPONENT
+let spaceship = {
+  "Fuel Type": "Turbo Fuel",
+  homePlanet: "Earth",
+};
+
+let greenEnergy = (obj) => {
+  obj["Fuel Type"] = "avocado oil";
+};
+greenEnergy(spaceship);
+console.log(spaceship["Fuel Type"]);
+//output avocado oil
