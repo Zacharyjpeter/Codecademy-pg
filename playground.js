@@ -920,3 +920,15 @@ let greenEnergy = (obj) => {
 greenEnergy(spaceship);
 console.log(spaceship["Fuel Type"]);
 //output avocado oil
+
+//Objects are passed by reference (literally to the space in the computer memory)
+let remotelyDisable = (obj) => {
+  obj.disabled = true;
+};
+
+remotelyDisable(spaceship);
+greenEnergy(spaceship);
+console.log(spaceship);
+//output: { 'Fuel Type': 'avocado oil',
+// homePlanet: 'Earth',
+// disabled: true }
