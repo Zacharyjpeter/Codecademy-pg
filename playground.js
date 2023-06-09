@@ -975,3 +975,13 @@ for (let crewMember in spaceship.crew) {
 //chief officer: Dan
 //medic: Clementine
 //translator: Shauna
+
+//finally got this to work!!
+//let crewMember assigns the value of crew prop to "crewMember". This allows the array to associate crew member titles dynamically on each iteration
+//spaceship.crew[crewMember].name uses EACH crew title as an anchor [crewMember] and specifically logs that person's name
+//spaceship.crew[crewMember].degree uses EACH crew title as an anchor and specifically logs that person's degree
+for (let crewMember in spaceship.crew) {
+  console.log(
+    `${spaceship.crew[crewMember].name}: ${spaceship.crew[crewMember].degree}`
+  );
+}
