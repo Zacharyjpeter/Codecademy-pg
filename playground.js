@@ -985,3 +985,8 @@ for (let crewMember in spaceship.crew) {
     `${spaceship.crew[crewMember].name}: ${spaceship.crew[crewMember].degree}`
   );
 }
+/*output:
+Lily: Computer Engineering
+Dan: Aerospace Engineering
+Clementine: Physics
+Shauna: Conservation Science*/
