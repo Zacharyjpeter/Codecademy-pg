@@ -990,3 +990,15 @@ Lily: Computer Engineering
 Dan: Aerospace Engineering
 Clementine: Physics
 Shauna: Conservation Science*/
+
+//New Concept: "this" keyword. Allows you to access current object props despite scope error
+const robot = {
+  model: "1E78V2",
+  energyLevel: 100,
+  provideInfo() {
+    return `I am ${this.model} and my current energy level is ${this.energyLevel}`;
+  },
+};
+
+console.log(robot.provideInfo());
+//output: I am 1E78V2 and my current energy level is 100
