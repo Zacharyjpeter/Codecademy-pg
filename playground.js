@@ -1002,3 +1002,15 @@ const robot = {
 
 console.log(robot.provideInfo());
 //output: I am 1E78V2 and my current energy level is 100
+
+//Important Note: Arrow functions inherently reference the global object when "this" is used
+//the checkEnergy will not work in this case and needs to refactored to "checkEnergy()" to work
+const r2d2 = {
+  energyLevel: 100,
+  checkEnergy: () => {
+    console.log(`Energy is currently at ${this.energyLevel}%.`);
+  },
+};
+
+r2d2.checkEnergy();
+//output: Energy is currently at undefined%.
