@@ -1014,3 +1014,17 @@ const r2d2 = {
 
 r2d2.checkEnergy();
 //output: Energy is currently at undefined%.
+
+//"privacy" is when a object property is not supposed to be changed
+//javascript doesn't have this built in. So the "_" is a signal
+const c3pO = {
+  _energyLevel: 100,
+  recharge() {
+    this._energyLevel += 30;
+    console.log(`Recharged! Energy is currently at ${this._energyLevel}%.`);
+  },
+};
+
+robot._energyLevel = "high";
+robot.recharge();
+//output: Recharged! Energy is currently at high30%.
