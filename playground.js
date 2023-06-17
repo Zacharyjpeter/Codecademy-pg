@@ -1028,3 +1028,18 @@ const c3pO = {
 robot._energyLevel = "high";
 robot.recharge();
 //output: Recharged! Energy is currently at high30%.
+
+//getters are somehow better than a regular object method. I don't understand why yet. The return value is the same
+const arjun = {
+  _model: "1E78V2",
+  _energyLevel: 100,
+  get energyLevel() {
+    if (typeof this._energyLevel === "number") {
+      return `My current energy level is ${this._energyLevel}`;
+    } else {
+      return "System malfunction: cannot retrieve energy level";
+    }
+  },
+};
+
+console.log(arjun.energyLevel);
